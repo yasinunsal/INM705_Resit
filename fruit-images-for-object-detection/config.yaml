@@ -1,0 +1,14 @@
+path_settings:
+    train_root: "fruit-images-for-object-detection/train_zip/train/"
+    val_root: "fruit-images-for-object-detection/test_zip/test/"
+    checkpoint_root: "fruit-images-for-object-detection/checkpoints/"
+model:
+    optimizer: "ADAM"
+    backbone : "RESNET"
+train:
+    epochs: 100
+    batch_size_train: 4
+    batch_size_val: 2
+    learning_rate: 0.00001
+    weight_decay: 0.001
+    image_size: 112
